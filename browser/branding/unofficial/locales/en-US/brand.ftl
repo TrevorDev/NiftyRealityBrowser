@@ -12,4 +12,4 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
--brand-short-name = Nightly
+-brand-short-name = NiftyReality
