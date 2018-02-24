@@ -709,14 +709,9 @@
     </toolbar>
 
     <toolbar id="nav-bar"
-             aria-label="&navbarCmd.label;"
-             fullscreentoolbar="true" mode="icons" customizable="true"
-             customizationtarget="nav-bar-customization-target"
-             overflowable="true"
-             overflowbutton="nav-bar-overflow-button"
-             overflowtarget="widget-overflow-list"
-             overflowpanel="widget-overflow"
-             context="toolbar-context-menu">
+             collapsed="true"
+             hidden="true"
+             >
 
       <hbox id="nav-bar-customization-target" flex="1">
         <toolbarbutton id="back-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
