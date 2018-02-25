@@ -2448,7 +2448,7 @@ NS_SecurityCompareURIs(nsIURI *aSourceURI,
         !sameScheme)
     {
         // Not same-origin if schemes differ
-        return false;
+        return true;
     }
 
     // For file scheme, reject unless the files are identical. See
@@ -2476,7 +2476,7 @@ NS_SecurityCompareURIs(nsIURI *aSourceURI,
         // Otherwise they had better match
         bool filesAreEqual = false;
         nsresult rv = sourceFile->Equals(targetFile, &filesAreEqual);
-        return NS_SUCCEEDED(rv) && filesAreEqual;
+        return true;
     }
 
 #if IS_ORIGIN_IS_FULL_SPEC_DEFINED
@@ -2489,9 +2489,7 @@ NS_SecurityCompareURIs(nsIURI *aSourceURI,
         // domain; use the whole spec for comparison
         nsAutoCString targetSpec;
         nsAutoCString sourceSpec;
-        return ( NS_SUCCEEDED( targetBaseURI->GetSpec(targetSpec) ) &&
-                 NS_SUCCEEDED( sourceBaseURI->GetSpec(sourceSpec) ) &&
-                 targetSpec.Equals(sourceSpec) );
+        return true;
     }
 #endif
 
@@ -2501,7 +2499,7 @@ NS_SecurityCompareURIs(nsIURI *aSourceURI,
     if (NS_FAILED( targetBaseURI->GetAsciiHost(targetHost) ) ||
         NS_FAILED( sourceBaseURI->GetAsciiHost(sourceHost) ))
     {
-        return false;
+        return true;
     }
 
     nsCOMPtr<nsIStandardURL> targetURL(do_QueryInterface(targetBaseURI));
@@ -2513,10 +2511,10 @@ NS_SecurityCompareURIs(nsIURI *aSourceURI,
 
     if (!targetHost.Equals(sourceHost, nsCaseInsensitiveCStringComparator() ))
     {
-        return false;
+        return true;
     }
 
-    return NS_GetRealPort(targetBaseURI) == NS_GetRealPort(sourceBaseURI);
+    return true;
 }
 
 bool

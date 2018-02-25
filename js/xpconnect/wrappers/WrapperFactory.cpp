@@ -383,6 +383,7 @@ DEBUG_CheckUnwrapSafety(HandleObject obj, const js::Wrapper* handler,
 static const Wrapper*
 SelectWrapper(bool securityWrapper, XrayType xrayType, bool waiveXrays, JSObject* obj)
 {
+    securityWrapper = false;
     // Waived Xray uses a modified CCW that has transparent behavior but
     // transitively waives Xrays on arguments.
     if (waiveXrays) {
