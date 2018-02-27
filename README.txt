@@ -1,27 +1,22 @@
-An explanation of the Mozilla Source Code Directory Structure and links to
-project pages with documentation can be found at:
+# Nifty Reality Browser
+The first (that I know of) webVR browser that supports multitasking! Built to replace standard browsing on a pc or phone.
 
-    https://developer.mozilla.org/en/Mozilla_Source_Code_Directory_Structure
+## Download Installer
+Windows - Coming soon
 
-For information on how to build Mozilla from the source code, see:
+## Features
+ - Multitasking through IFrames (Load webpage in IFrame and pull contents to be rendered in 3D)
+ - No URL bar (Instantly launches to NiftyReality home)
+ - Enter VR without user interaction
+ - Customized branding
 
-    https://developer.mozilla.org/en/docs/Build_Documentation
+# How to build/contribute
+ - Clone this repo
+ - Follow instructions here to get mecurial repo
+ - Copy .hg folder into git repo and place at \mozilla-source\mozilla-central
+ - Follow the rest of the instructions found here: https://developer.mozilla.org/en/docs/Build_Documentation
 
-To have your bug fix / feature added to Mozilla, you should create a patch and
-submit it to Bugzilla (https://bugzilla.mozilla.org). Instructions are at:
-
-    https://developer.mozilla.org/en/docs/Creating_a_patch
-    https://developer.mozilla.org/en/docs/Getting_your_patch_in_the_tree
-
-If you have a question about developing Mozilla, and can't find the solution
-on https://developer.mozilla.org, you can try asking your question in a
-mozilla.* Usenet group, or on IRC at irc.mozilla.org. [The Mozilla news groups
-are accessible on Google Groups, or news.mozilla.org with a NNTP reader.]
-
-You can download nightly development builds from the Mozilla FTP server.
-Keep in mind that nightly builds, which are used by Mozilla developers for
-testing, may be buggy. Firefox nightlies, for example, can be found at:
-
-    https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/
-            - or -
-    https://nightly.mozilla.org/
+# Questions/Comments
+ - Post an issue on github
+ - Read about [NiftyKick](https://docs.google.com/document/d/1JzxKqir57c4RnpHhpH8nED8CRY7APwZqmYLlYzYcS-I/edit#heading=h.zaqoh49040zq)
+ - Niftykick.com
