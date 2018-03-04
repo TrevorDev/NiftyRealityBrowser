@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/Penncwn.png" alt="logo" width="200" >
+
 # Nifty Reality Browser
 The first (that I know of) webVR browser that supports multitasking! Built to replace standard browsing on a pc or phone.
 
@@ -20,3 +22,6 @@ Windows - Coming soon
  - Post an issue on github
  - Read about [NiftyKick](https://docs.google.com/document/d/1JzxKqir57c4RnpHhpH8nED8CRY7APwZqmYLlYzYcS-I/edit#heading=h.zaqoh49040zq)
  - Niftykick.com
+ 
+ <img src="https://i.imgur.com/J6SfY4q.png" alt="logo" width="500" >
+ 
